@@ -1,0 +1,347 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+    .bannercell {
+      border: 0px;
+      padding: 0px;
+    }
+    body {
+      margin-left: 10;
+      margin-right: 10;
+      font:normal 80% arial,helvetica,sanserif;
+      background-color:#FFFFFF;
+      color:#000000;
+    }
+    .a td {
+      background: #efefef;
+    }
+    .b td {
+      background: #fff;
+    }
+    th, td {
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      font-weight:bold;
+      background: #ccc;
+      color: black;
+    }
+    table, th, td {
+      font-size:100%;
+      border: none
+    }
+    table.log tr td, tr th {
+
+    }
+    h2 {
+      font-weight:bold;
+      font-size:140%;
+      margin-bottom: 5;
+    }
+    h3 {
+      font-size:100%;
+      font-weight:bold;
+      background: #525D76;
+      color: white;
+      text-decoration: none;
+      padding: 5px;
+      margin-right: 2px;
+      margin-left: 2px;
+      margin-bottom: 0;
+    }
+		</style>
+</head>
+<body>
+<a name="top"></a>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td class="bannercell" rowspan="2"></td><td class="text-align:right">
+<h2>CheckStyle Audit</h2>
+</td>
+</tr>
+<tr>
+<td class="text-align:right">Designed for use with <a href="http://checkstyle.sourceforge.net/">CheckStyle</a> and <a href="http://jakarta.apache.org">Ant</a>.</td>
+</tr>
+</table>
+<hr size="1">
+<h3>Summary</h3>
+<table class="log" border="0" cellpadding="5" cellspacing="2" width="100%">
+<tr>
+<th>Files</th><th>Errors</th>
+</tr>
+<tr class="a">
+<td>6</td><td>66</td>
+</tr>
+</table>
+<hr size="1" width="100%" align="left">
+<h3>Files</h3>
+<table class="log" border="0" cellpadding="5" cellspacing="2" width="100%">
+<tr>
+<th>Name</th><th>Errors</th>
+</tr>
+<tr class="a">
+<td><a href="#f-/Users/ludongbin/workspace/spring/spring-framework-5.3.10/tuling/src/main/java/com/zhouyu/Test.java">/Users/ludongbin/workspace/spring/spring-framework-5.3.10/tuling/src/main/java/com/zhouyu/Test.java</a></td><td>28</td>
+</tr>
+<tr class="b">
+<td><a href="#f-/Users/ludongbin/workspace/spring/spring-framework-5.3.10/tuling/src/main/java/com/zhouyu/service/UserService.java">/Users/ludongbin/workspace/spring/spring-framework-5.3.10/tuling/src/main/java/com/zhouyu/service/UserService.java</a></td><td>16</td>
+</tr>
+<tr class="a">
+<td><a href="#f-/Users/ludongbin/workspace/spring/spring-framework-5.3.10/tuling/src/main/java/com/zhouyu/AppConfig.java">/Users/ludongbin/workspace/spring/spring-framework-5.3.10/tuling/src/main/java/com/zhouyu/AppConfig.java</a></td><td>15</td>
+</tr>
+<tr class="b">
+<td><a href="#f-/Users/ludongbin/workspace/spring/spring-framework-5.3.10/tuling/src/main/java/com/zhouyu/aspect/ZhouyuAspect.java">/Users/ludongbin/workspace/spring/spring-framework-5.3.10/tuling/src/main/java/com/zhouyu/aspect/ZhouyuAspect.java</a></td><td>4</td>
+</tr>
+<tr class="a">
+<td><a href="#f-/Users/ludongbin/workspace/spring/spring-framework-5.3.10/tuling/src/main/java/com/zhouyu/service/User.java">/Users/ludongbin/workspace/spring/spring-framework-5.3.10/tuling/src/main/java/com/zhouyu/service/User.java</a></td><td>2</td>
+</tr>
+<tr class="b">
+<td><a href="#f-/Users/ludongbin/workspace/spring/spring-framework-5.3.10/tuling/src/main/java/com/zhouyu/service/OrderService.java">/Users/ludongbin/workspace/spring/spring-framework-5.3.10/tuling/src/main/java/com/zhouyu/service/OrderService.java</a></td><td>1</td>
+</tr>
+</table>
+<hr size="1" width="100%" align="left">
+<a name="f-/Users/ludongbin/workspace/spring/spring-framework-5.3.10/tuling/src/main/java/com/zhouyu/AppConfig.java"></a>
+<h3>File /Users/ludongbin/workspace/spring/spring-framework-5.3.10/tuling/src/main/java/com/zhouyu/AppConfig.java</h3>
+<table class="log" border="0" cellpadding="5" cellspacing="2" width="100%">
+<tr>
+<th>Error Description</th><th>Line</th>
+</tr>
+<tr class="a">
+<td>header.mismatch</td><td>1</td>
+</tr>
+<tr class="b">
+<td>无用导入 - com.zhouyu.service.OrderService 。</td><td>3</td>
+</tr>
+<tr class="a">
+<td>'org.springframework.context.annotation.*' 应与之前的导入语句通过空行隔开。</td><td>4</td>
+</tr>
+<tr class="b">
+<td>不应使用 '.*' 形式的导入 - org.springframework.context.annotation.* 。</td><td>4</td>
+</tr>
+<tr class="a">
+<td>无用导入 - org.springframework.jdbc.core.JdbcTemplate 。</td><td>5</td>
+</tr>
+<tr class="b">
+<td>无用导入 - org.springframework.jdbc.datasource.DataSourceTransactionManager 。</td><td>6</td>
+</tr>
+<tr class="a">
+<td>无用导入 - org.springframework.jdbc.datasource.DriverManagerDataSource 。</td><td>7</td>
+</tr>
+<tr class="b">
+<td>无用导入 - org.springframework.scheduling.TaskScheduler 。</td><td>8</td>
+</tr>
+<tr class="a">
+<td>无用导入 - org.springframework.scheduling.annotation.EnableAsync 。</td><td>9</td>
+</tr>
+<tr class="b">
+<td>无用导入 - org.springframework.scheduling.annotation.SchedulingConfigurer 。</td><td>11</td>
+</tr>
+<tr class="a">
+<td>无用导入 - org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler 。</td><td>12</td>
+</tr>
+<tr class="b">
+<td>无用导入 - org.springframework.transaction.PlatformTransactionManager 。</td><td>13</td>
+</tr>
+<tr class="a">
+<td>无用导入 - org.springframework.transaction.annotation.EnableTransactionManagement 。</td><td>14</td>
+</tr>
+<tr class="b">
+<td>导入 'javax.sql.DataSource' 顺序错误。</td><td>16</td>
+</tr>
+<tr class="a">
+<td>无用导入 - javax.sql.DataSource 。</td><td>16</td>
+</tr>
+</table>
+<a href="#top">Back to top</a><a name="f-/Users/ludongbin/workspace/spring/spring-framework-5.3.10/tuling/src/main/java/com/zhouyu/Test.java"></a>
+<h3>File /Users/ludongbin/workspace/spring/spring-framework-5.3.10/tuling/src/main/java/com/zhouyu/Test.java</h3>
+<table class="log" border="0" cellpadding="5" cellspacing="2" width="100%">
+<tr>
+<th>Error Description</th><th>Line</th>
+</tr>
+<tr class="a">
+<td>header.mismatch</td><td>1</td>
+</tr>
+<tr class="b">
+<td>无用导入 - com.zhouyu.service.User 。</td><td>3</td>
+</tr>
+<tr class="a">
+<td>无用导入 - org.aopalliance.aop.Advice 。</td><td>5</td>
+</tr>
+<tr class="b">
+<td>无用导入 - org.aopalliance.intercept.MethodInterceptor 。</td><td>6</td>
+</tr>
+<tr class="a">
+<td>无用导入 - org.aopalliance.intercept.MethodInvocation 。</td><td>7</td>
+</tr>
+<tr class="b">
+<td>无用导入 - org.jetbrains.annotations.NotNull 。</td><td>8</td>
+</tr>
+<tr class="a">
+<td>无用导入 - org.jetbrains.annotations.Nullable 。</td><td>9</td>
+</tr>
+<tr class="b">
+<td>'org.springframework.aop.Pointcut' 应与之前的导入语句通过空行隔开。</td><td>10</td>
+</tr>
+<tr class="a">
+<td>无用导入 - org.springframework.aop.Pointcut 。</td><td>10</td>
+</tr>
+<tr class="b">
+<td>无用导入 - org.springframework.aop.framework.ProxyFactory 。</td><td>11</td>
+</tr>
+<tr class="a">
+<td>无用导入 - org.springframework.aop.support.AbstractPointcutAdvisor 。</td><td>12</td>
+</tr>
+<tr class="b">
+<td>无用导入 - org.springframework.beans.factory.InitializingBean 。</td><td>13</td>
+</tr>
+<tr class="a">
+<td>无用导入 - org.springframework.beans.factory.annotation.Autowired 。</td><td>14</td>
+</tr>
+<tr class="b">
+<td>无用导入 - org.springframework.beans.factory.support.AbstractBeanDefinition 。</td><td>15</td>
+</tr>
+<tr class="a">
+<td>无用导入 - org.springframework.beans.factory.support.BeanDefinitionBuilder 。</td><td>16</td>
+</tr>
+<tr class="b">
+<td>无用导入 - org.springframework.cglib.proxy.Enhancer 。</td><td>17</td>
+</tr>
+<tr class="a">
+<td>无用导入 - org.springframework.cglib.proxy.MethodProxy 。</td><td>18</td>
+</tr>
+<tr class="b">
+<td>无用导入 - org.springframework.context.ApplicationContext 。</td><td>19</td>
+</tr>
+<tr class="a">
+<td>导入 'javax.annotation.PostConstruct' 顺序错误。</td><td>22</td>
+</tr>
+<tr class="b">
+<td>无用导入 - javax.annotation.PostConstruct 。</td><td>22</td>
+</tr>
+<tr class="a">
+<td>导入 'java.lang.reflect.Field' 顺序错误。</td><td>23</td>
+</tr>
+<tr class="b">
+<td>无用导入 - java.lang.reflect.Field 。</td><td>23</td>
+</tr>
+<tr class="a">
+<td>无用导入 - java.lang.reflect.InvocationTargetException 。</td><td>24</td>
+</tr>
+<tr class="b">
+<td>无用导入 - java.lang.reflect.Method 。</td><td>25</td>
+</tr>
+<tr class="a">
+<td>无用导入 - java.util.concurrent.ScheduledThreadPoolExecutor 。</td><td>26</td>
+</tr>
+<tr class="b">
+<td>无用导入 - java.util.concurrent.TimeUnit 。</td><td>27</td>
+</tr>
+<tr class="a">
+<td>工具类应隐藏 public 构造器。</td><td>31</td>
+</tr>
+<tr class="b">
+<td>Class name 'Test' must not end with 'Test' (checked pattern '^[A-Z][a-zA-Z0-9_]*(?&lt;!Test)$').</td><td>31</td>
+</tr>
+</table>
+<a href="#top">Back to top</a><a name="f-/Users/ludongbin/workspace/spring/spring-framework-5.3.10/tuling/src/main/java/com/zhouyu/aspect/ZhouyuAspect.java"></a>
+<h3>File /Users/ludongbin/workspace/spring/spring-framework-5.3.10/tuling/src/main/java/com/zhouyu/aspect/ZhouyuAspect.java</h3>
+<table class="log" border="0" cellpadding="5" cellspacing="2" width="100%">
+<tr>
+<th>Error Description</th><th>Line</th>
+</tr>
+<tr class="a">
+<td>header.mismatch</td><td>1</td>
+</tr>
+<tr class="b">
+<td>无用导入 - org.aspectj.lang.annotation.After 。</td><td>4</td>
+</tr>
+<tr class="a">
+<td>'org.springframework.core.annotation.Order' 应与之前的导入语句通过空行隔开。</td><td>8</td>
+</tr>
+<tr class="b">
+<td>无用导入 - org.springframework.core.annotation.Order 。</td><td>8</td>
+</tr>
+</table>
+<a href="#top">Back to top</a><a name="f-/Users/ludongbin/workspace/spring/spring-framework-5.3.10/tuling/src/main/java/com/zhouyu/service/OrderService.java"></a>
+<h3>File /Users/ludongbin/workspace/spring/spring-framework-5.3.10/tuling/src/main/java/com/zhouyu/service/OrderService.java</h3>
+<table class="log" border="0" cellpadding="5" cellspacing="2" width="100%">
+<tr>
+<th>Error Description</th><th>Line</th>
+</tr>
+<tr class="a">
+<td>header.missing</td><td>1</td>
+</tr>
+</table>
+<a href="#top">Back to top</a><a name="f-/Users/ludongbin/workspace/spring/spring-framework-5.3.10/tuling/src/main/java/com/zhouyu/service/User.java"></a>
+<h3>File /Users/ludongbin/workspace/spring/spring-framework-5.3.10/tuling/src/main/java/com/zhouyu/service/User.java</h3>
+<table class="log" border="0" cellpadding="5" cellspacing="2" width="100%">
+<tr>
+<th>Error Description</th><th>Line</th>
+</tr>
+<tr class="a">
+<td>header.missing</td><td>1</td>
+</tr>
+<tr class="b">
+<td>无用导入 - org.springframework.stereotype.Component 。</td><td>3</td>
+</tr>
+</table>
+<a href="#top">Back to top</a><a name="f-/Users/ludongbin/workspace/spring/spring-framework-5.3.10/tuling/src/main/java/com/zhouyu/service/UserService.java"></a>
+<h3>File /Users/ludongbin/workspace/spring/spring-framework-5.3.10/tuling/src/main/java/com/zhouyu/service/UserService.java</h3>
+<table class="log" border="0" cellpadding="5" cellspacing="2" width="100%">
+<tr>
+<th>Error Description</th><th>Line</th>
+</tr>
+<tr class="a">
+<td>header.mismatch</td><td>1</td>
+</tr>
+<tr class="b">
+<td>无用导入 - org.springframework.aop.framework.AopContext 。</td><td>3</td>
+</tr>
+<tr class="a">
+<td>无用导入 - org.springframework.beans.factory.BeanNameAware 。</td><td>4</td>
+</tr>
+<tr class="b">
+<td>无用导入 - org.springframework.beans.factory.InitializingBean 。</td><td>5</td>
+</tr>
+<tr class="a">
+<td>无用导入 - org.springframework.context.annotation.Bean 。</td><td>7</td>
+</tr>
+<tr class="b">
+<td>无用导入 - org.springframework.context.annotation.Lazy 。</td><td>8</td>
+</tr>
+<tr class="a">
+<td>无用导入 - org.springframework.context.annotation.Scope 。</td><td>9</td>
+</tr>
+<tr class="b">
+<td>无用导入 - org.springframework.jdbc.core.JdbcTemplate 。</td><td>10</td>
+</tr>
+<tr class="a">
+<td>无用导入 - org.springframework.scheduling.annotation.Scheduled 。</td><td>11</td>
+</tr>
+<tr class="b">
+<td>无用导入 - org.springframework.transaction.annotation.Propagation 。</td><td>13</td>
+</tr>
+<tr class="a">
+<td>无用导入 - org.springframework.transaction.annotation.Transactional 。</td><td>14</td>
+</tr>
+<tr class="b">
+<td>导入 'javax.annotation.PostConstruct' 顺序错误。</td><td>16</td>
+</tr>
+<tr class="a">
+<td>无用导入 - javax.annotation.PostConstruct 。</td><td>16</td>
+</tr>
+<tr class="b">
+<td>导入 'java.util.Date' 顺序错误。</td><td>17</td>
+</tr>
+<tr class="a">
+<td>无用导入 - java.util.Date 。</td><td>17</td>
+</tr>
+<tr class="b">
+<td>对实例属性 'orderService' 的引用需要 "this."。</td><td>26</td>
+</tr>
+</table>
+<a href="#top">Back to top</a>
+<hr size="1" width="100%" align="left">
+</body>
+</html>

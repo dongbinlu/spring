@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:mvc="http://www.springframework.org/schema/mvc"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+	<!--注解驱动   此注解驱动，自动向容器中添加了HandlerMapping和HandlerAdapter（缺少SimpleServletHandlerAdapter）-->
+	<!--<mvc:annotation-driven/>-->
+
+	<!--注解配置mvc-->
+	<context:component-scan base-package="com.only.mvc.controller"/>
+
+	<bean id="/servlet.do" class="com.only.mvc.controller.ServletController"/>
+
+	<bean id="simpleController" class="com.only.mvc.controller.SimpleController"/>
+
+	<!--基于url手动配置映射-->
+	<bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="urlMap">
+			<props>
+				<prop key="/simple.do">simpleController</prop>
+			</props>
+		</property>
+	</bean>
+
+	<!--配置映射器，基于IOC中beanName中以/开头的bean进行映射注册-->
+	<bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
+
+	<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"/>
+
+	<!--配置适配器-->
+
+	<!--处理Controller的Handler-->
+	<bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>
+	<!--处理HttpServlet的Handler-->
+	<bean class="org.springframework.web.servlet.handler.SimpleServletHandlerAdapter"/>
+	<!--处理@ReqeustMapping注解-->
+	<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"/>
+
+	<!--通用视图解析起-->
+	<bean id="internalResourceViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/jsp/"/>
+		<property name="suffix" value=".jsp"/>
+	</bean>
+
+
+	<!--自定义异常处理-->
+	<!-- <bean class="com.only.mvc.exception.SimpleExceptionHandle"/>-->
+
+	<!--配置拦截器-->
+
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/**"/>
+			<!--注意这里拦截器包命名，不能命名为interceptor包，不然报cannot create inner bean错-->
+			<bean class="com.only.mvc.intercepter.OnlyInterceptor"/>
+		</mvc:interceptor>
+	</mvc:interceptors>
+
+</beans>

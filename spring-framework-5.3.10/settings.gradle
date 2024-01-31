@@ -58,9 +58,10 @@ settings.gradle.projectsLoaded {
 	}
 }
 include 'tuling'
-include 'tuling-web'
 include 'tuling-boot'
 include 'tuling-vip-demo'
-include 'spring-tuling-webmvc'
 include 'spring-tuling-boot'
+include 'only-webmvc'
+include 'only-mvc-plus'
+include 'only-mvcmvc-javaconfig'
 
